@@ -15,7 +15,6 @@ find_package(Qt5 COMPONENTS
 
 add_executable(Widget_3
         main.cpp
-        widget.ui
         widget.h
         widget.cpp
         figure.h
@@ -23,7 +22,6 @@ add_executable(Widget_3
         area.h
         area.cpp
         )
-        
 target_link_libraries(Widget_3
         Qt5::Core
         Qt5::Gui
