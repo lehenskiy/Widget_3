@@ -12,10 +12,10 @@ Widget::Widget() {
   layout->addWidget(area);
   layout->addWidget(button);
 
-  connect(button, SIGNAL(clicked(bool)), this, SLOT(close()));
+  connect(button, &QPushButton::clicked, this, &Widget::close);
 }
 
 Widget::~Widget() {
   delete area;
   delete button;
-};
+}
